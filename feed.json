@@ -1,0 +1,23 @@
+{
+    "format": "swiftedge-feed",
+    "v": 1,
+    "updated_at": "2026-10-21T07:36:32+00:00",
+    "releases": [
+        {
+            "version": "1.3.5",
+            "manifest": {
+                "version": "1.3.5",
+                "min_from_version": "1.0.0",
+                "payload_sha256": "4e4082e9c3a55fdcbf27c374097dcc6b34aac66af0684c4a2baa19172fec6311",
+                "payload_size": 23169034,
+                "has_migrations": true,
+                "security": false,
+                "released_at": "2026-10-21T07:32:03Z",
+                "release_notes": "SwiftEdge 1.3.5\n- Credit book: regulars who pay later, SMS reminders, statements.\n- Wholesale prices for resellers and bulk buyers.\n- Tills keep selling when the server is off; M-Pesa codes are checked after.\n- Lay-by: goods set aside while a customer pays in instalments.\n- Staff clock-in and clock-out, and staff hours.\n- Takeaway and delivery orders; open tabs on the floor.\n- Table reservations.\n- Detailed error reports and a five-minute heartbeat to SwiftEdge (after activation).\n- Fixes: menu page with a new business, price check, quick taps on a dish, recovery sheet commands on Windows.\n- Counter: quick scans are added in turn, none lost.\n- Windows: the server opens its own address (no certificate warning); installer fixes from the first real install.",
+                "notes_sha256": "1fd57c7a1b77969bfc28c3a4d002af4766bf255ba13fb8b0e66786351b179867",
+                "signature": "LiaV+m2aAkWnFhtjsdO6ECTyPOsMDlqPEBrYArcDFXJPt7FEna5lP9pfqw1R6nHEUtgElooLH9DXrhjKUy1oBQ=="
+            },
+            "package_url": "https://github.com/Antocaran/swiftedge-releases/releases/download/v1.3.5/swiftedge-1.3.5.lpk"
+        }
+    ]
+}
