@@ -1,8 +1,24 @@
 {
     "format": "swiftedge-feed",
     "v": 1,
-    "updated_at": "2026-10-21T13:40:20+00:00",
+    "updated_at": "2026-10-22T15:43:19+00:00",
     "releases": [
+        {
+            "version": "1.3.7",
+            "manifest": {
+                "version": "1.3.7",
+                "min_from_version": "0.0.0",
+                "payload_sha256": "a92d59a61aa94da3fa0be8914078e8f6ef97e639f1ffc51ca1b1d937bae3920d",
+                "payload_size": 23293178,
+                "has_migrations": true,
+                "security": false,
+                "released_at": "2026-10-22T15:02:41Z",
+                "release_notes": "SwiftEdge 1.3.7\n- Counter: the cashier chooses VAT for each line or for the whole sale: price includes VAT, add VAT on top, or no VAT. Every change is recorded with the cashier's name, and the receipt shows it.\n- Receipts: the address can have several lines (building, street, town); several phone numbers (separate them with commas).\n- M-Pesa: choose Till or Paybill in Settings, Business; a Paybill prints with its account number (\"Pay by M-Pesa Paybill: 247247 Acc: SHOP\").\n- Fix (Windows): updates, M-Pesa, eTIMS and activation no longer fail with \"unable to get local issuer certificate\" on a fresh PC.\n- Installer: clearer router advice (fixed IP, and the router's DNS pointing at this server).",
+                "notes_sha256": "33eabc5c61eddfe77efb218a20044595cb89afeddd87fcae4cbbec0966d7f799",
+                "signature": "7ArwitPWXiGOm5hxo5McuBw0AQuUoaNEIeaPj2f828S/gKcixOTC4ZYSwzbX0IW6AdAN75iJrpUjCz92Tc7IAQ=="
+            },
+            "package_url": "https://github.com/Antocaran/swiftedge-releases/releases/download/v1.3.7/swiftedge-1.3.7.lpk"
+        },
         {
             "version": "1.3.6",
             "manifest": {
