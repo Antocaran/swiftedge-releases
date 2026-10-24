@@ -1,8 +1,24 @@
 {
     "format": "swiftedge-feed",
     "v": 1,
-    "updated_at": "2026-10-24T15:43:08+00:00",
+    "updated_at": "2026-10-24T18:34:24+00:00",
     "releases": [
+        {
+            "version": "1.3.9",
+            "manifest": {
+                "version": "1.3.9",
+                "min_from_version": "0.0.0",
+                "payload_sha256": "511ba1fe9ffbbcc56c8d577594a291502d5f3e064948b88b6b4288dd6dd049ea",
+                "payload_size": 27397122,
+                "has_migrations": true,
+                "security": false,
+                "released_at": "2026-10-24T18:32:42Z",
+                "release_notes": "SwiftEdge 1.3.9\n- A sale now survives a moment when the server does not answer. If a tap (add an item, send to the kitchen, print the bill, take a payment) gets no answer, the till asks again by itself for up to about 12 seconds, and the server makes sure nothing is done twice. If it still cannot, the till says \"The system did not answer. Please tap that again.\" Tested by restarting every web worker eleven times in the middle of 60 taps on the real order screen: every tap landed exactly once.\n- Faster on older computers: every page and tap no longer waits for a new database connection. On a 2011 Core i5 a page now takes about 40 to 50 ms instead of 110 to 230 ms, and the server handles about three times as many requests a second at the busiest times.\n- Windows: the web workers no longer restart by themselves during the day (all at once, which showed \"502\" on every till for a few seconds on a busy day), and the web server no longer treats a restarting worker as dead for ten seconds. This part is in the Windows service program, which updates do not replace: a server installed before 1.3.9 gets it by running update-service.cmd once from C:\\SwiftEdge\\current\\windows-service (the steps are in README.txt there). Without it everything still works as before, but the other improvements in this release help less during a restart.\n- Support: SwiftEdge support can now install a signed update or restart SwiftEdge on this server from their dashboard (it only ever installs updates signed by SwiftEdge, makes a backup first, goes back by itself if the check fails, and never restarts while a shift is open unless they tick \"even if a shift is open\"). Every such request is written to the audit log, and the owner can switch it off in Settings (\"Let SwiftEdge support install an update or restart SwiftEdge ...\"). The dashboard also shows how many times tills had to ask again today.\n- Tested: a simulated busy day of 400 customers (3 waiters, a cashier, the kitchen screen, two network printers) on an old two-core computer: every customer was served and paid, the takings matched the bills to the cent, and every receipt and kitchen ticket printed, including after a printer was switched off for a while.",
+                "notes_sha256": "90e68f9a906eb4d16e0af0b3884dd4efd50ab8e050cb0ee9cc9e63219f074db1",
+                "signature": "jBne7iZHB+WXHZXjy5U8kLkNQC/yFCe8ozJU3Hu10dwbOFOTLOL9CNDgvEiXPhvAlCpqEUzWf5IZEp71FdDMDQ=="
+            },
+            "package_url": "https://github.com/Antocaran/swiftedge-releases/releases/download/v1.3.9/swiftedge-1.3.9.lpk"
+        },
         {
             "version": "1.3.8",
             "manifest": {
